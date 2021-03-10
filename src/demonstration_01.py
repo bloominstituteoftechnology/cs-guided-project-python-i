@@ -10,4 +10,7 @@ Examples:
 """
 def addition(a, b):
     # Your code here
+    return a+b
 
+sum=addition(100,50)
+print("Total of %d and %d is %d"%(100,50,sum))
