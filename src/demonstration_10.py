@@ -15,4 +15,17 @@ Notes:
 """
 def get_discounts(nums, percentage):
     # Your code here
+    # newArray=[]
+    # for value in nums:
+    #     print(value)
+    #     newArray= newArray.append(value - value * percentage)
+    # return newArray
+    discount=int(percentage[:-1]) / 100 
+    #[:/-1 gets rid of the last byte the % sign]
+    # res=[]
+    # for num in nums:
+    #     res.append(num * discount)
+    # return res
+    return [n * discount for n in nums]
 
+print(get_discounts([2, 4, 6, 11], "50%"))

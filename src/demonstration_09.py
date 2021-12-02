@@ -14,4 +14,8 @@ Notes:
 """
 def mapping(letters):
     # Your code here
+    for value in letters:
+        newdict={value: value.upper()}
+    return newdict
 
+print(mapping(["p", "s"]))
